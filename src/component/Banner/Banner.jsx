@@ -1,54 +1,60 @@
-import { Container, Typography, makeStyles } from '@material-ui/core';
-import React from 'react'
-import Carousel from './Carousel';
-
-const useStyles = makeStyles({
-  banner: {
-    backgroundImage: "url(./Banner.jpg)"
-  },
-  bannerContent: {
-    height: 400,
-    display: "flex",
-    flexDirection: "column",
-    paddingTop: 25,
-    justifyContent: "space-around"
-  },
-  tagline: {
-    display: "flex",
-    height: "40%",
-    flexDirection: "column",
-    paddingTop: 25,
-    justifyContent: "center",
-    textAlign: "center"
-  }
-});
-
+import React from "react";
+import { Container, Typography, Box } from "@mui/material";
+import Carousel from "./Carousel";
 
 const Banner = () => {
-  const classes = useStyles()
   return (
-    <div className={classes.banner}>
-      <Container className={classes.bannerContent}>
-        <div className={classes.tagline}>
-          <Typography variant='h2' style={{
-            fontFamily: "Montserrat",
-            fontWeight: "bold",
-            marginBottom: 15
-          }}>
+    <Box
+      sx={{
+        backgroundImage: "url(./Banner.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <Container
+        sx={{
+          height: 400,
+          display: "flex",
+          flexDirection: "column",
+          paddingTop: 3,
+          justifyContent: "space-around",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            height: "40%",
+            flexDirection: "column",
+            paddingTop: 3,
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+        >
+          <Typography
+            variant="h2"
+            sx={{
+              fontFamily: "Montserrat",
+              fontWeight: "bold",
+              marginBottom: 2,
+            }}
+          >
             CryptoPulse
           </Typography>
-          <Typography variant='subtitle2' style={{
-            color: "darkgray",
-            textTransform: "capitalize",
-            fontFamily: "Montserrat"
-          }}>
+          <Typography
+            variant="subtitle2"
+            sx={{
+              color: "darkgray",
+              textTransform: "capitalize",
+              fontFamily: "Montserrat",
+            }}
+          >
             Get all the Info Regarding Your Favorite Crypto Currency
           </Typography>
-        </div>
+        </Box>
         <Carousel />
       </Container>
-    </div>
-  )
-}
+    </Box>
+  );
+};
 
-export default Banner
+export default Banner;
