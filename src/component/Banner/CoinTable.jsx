@@ -29,7 +29,6 @@ function CoinTable() {
   const navigate = useNavigate();
 
   const fetchCoins = async () => {
-    console.log("Fetching coins with currency:", currency);
     setLoading(true);
     try {
       const { data } = await axios.get(CoinList(currency));
@@ -43,7 +42,6 @@ function CoinTable() {
   };
 
   useEffect(() => {
-    console.log("useEffect ran with currency:", currency);
     fetchCoins();
     // eslint-disable-next-line
   }, [currency]);
