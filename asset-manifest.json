@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Crypto-Pulse/static/css/main.b90641cd.css",
-    "main.js": "/Crypto-Pulse/static/js/main.2dfa79a7.js",
+    "main.js": "/Crypto-Pulse/static/js/main.f9be8625.js",
     "index.html": "/Crypto-Pulse/index.html",
     "main.b90641cd.css.map": "/Crypto-Pulse/static/css/main.b90641cd.css.map",
-    "main.2dfa79a7.js.map": "/Crypto-Pulse/static/js/main.2dfa79a7.js.map"
+    "main.f9be8625.js.map": "/Crypto-Pulse/static/js/main.f9be8625.js.map"
   },
   "entrypoints": [
     "static/css/main.b90641cd.css",
-    "static/js/main.2dfa79a7.js"
+    "static/js/main.f9be8625.js"
   ]
 }
