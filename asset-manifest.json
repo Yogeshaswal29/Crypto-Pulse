@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Crypto-Pulse/static/css/main.b90641cd.css",
+    "main.js": "/Crypto-Pulse/static/js/main.8f988890.js",
+    "index.html": "/Crypto-Pulse/index.html",
+    "main.b90641cd.css.map": "/Crypto-Pulse/static/css/main.b90641cd.css.map",
+    "main.8f988890.js.map": "/Crypto-Pulse/static/js/main.8f988890.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b90641cd.css",
+    "static/js/main.8f988890.js"
+  ]
+}
