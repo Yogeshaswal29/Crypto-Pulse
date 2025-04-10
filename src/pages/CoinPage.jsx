@@ -16,20 +16,18 @@ function CoinPage() {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
 
-  const fetchCoin = () => {
-    axios
-      .get(SingleCoin(id))
-      .then((res) => {
-        setCoin(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
   useEffect(() => {
+    const fetchCoin = async () => {
+      try {
+        const { data } = await axios.get(SingleCoin(id));
+        setCoin(data);
+      } catch (err) {
+        console.error("Failed to fetch coin:", err);
+      }
+    };
+
     fetchCoin();
-  }, []);
+  }, [id]);
 
   if (!coin) {
     return <LinearProgress sx={{ backgroundColor: "gold" }} />;

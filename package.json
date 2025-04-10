@@ -2,7 +2,7 @@
   "name": "crypto-pulse",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Yogeshaswal29.github.io/Crypto-Pulse",
+  "homepage": "https://yogeshaswal29.github.io/Crypto-Pulse",
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.0",
